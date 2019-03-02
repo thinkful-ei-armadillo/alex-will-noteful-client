@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "alias": "alex-will-react-client",
+    "name": "alex-will-react-client",
+    "routes": [
+        {
+          "src": "^/static/(.*)",
+          "dest": "/static/$1"
+        },
+        {
+          "src": ".*",
+          "dest": "/index.html"
+        }
+    ]
+  }
