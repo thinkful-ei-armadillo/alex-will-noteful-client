@@ -1,0 +1,70 @@
+
+
+3 Routes
+
+  - Each route has, header, main, sidebar
+  - Same header in all pages, link to home page
+
+  Main /
+    - show everything
+    - each note, name modified date
+    - sidebar of folders, none selected
+
+  Folder /folder/:folder-id
+    - show only notes in :folder-id
+    - sidebar has current folder selected
+
+  Note  /notes/:note-id
+    - show name modifed date and content
+    - sidebar,folder note is in and back button
+
+
+
+
+Main Route
+
+  Sidebar
+
+    List
+
+      FolderItems
+
+      AddFolderButton
+
+  Main
+
+    NoteList
+
+      NotePreview
+
+    AddNoteButton
+
+Folder Route
+
+  Sidebar
+
+    List
+
+      FolderItems (one will be highlighted via NavLink)
+
+      AddFolderButton
+
+  Main
+
+    NoteList
+
+      NotePreview
+
+    AddNoteButton
+
+Note Route
+
+  Sidebar
+
+    GoBackButton
+
+    FolderNameLabel
+
+  Main
+
+    NoteFull
